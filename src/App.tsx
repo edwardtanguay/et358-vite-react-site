@@ -1,6 +1,7 @@
 import employees from "./data/employees.json";
 import dayjs from "dayjs";
 import * as config from "./config";
+import cityscape from './images/cityscape.jpg';
 
 function App() {
 	const title = "Employee Directory";
@@ -14,7 +15,8 @@ function App() {
 				You are in the group{" "}
 				<span className="italic">{config.userAccessGroup}</span>.
 			</p>
-			<p>{introText}</p>
+			<img className="mb-3 rounded" src={cityscape}/>
+			<p className="max-w-lg">{introText}</p>
 			<div>
 				{employees.map((employee) => {
 					return (
