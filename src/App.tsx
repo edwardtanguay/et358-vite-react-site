@@ -25,6 +25,12 @@ function App() {
 									<div className="text-yellow-200">
 										{employee.title}
 									</div>
+									<div>
+										{employee.address.phone}
+									</div>
+									<div>
+										{employee.birthDate}
+									</div>
 								</div>
 							</div>
 							<div className="mt-2 italic text-slate-400">
