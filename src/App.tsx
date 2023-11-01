@@ -12,14 +12,14 @@ function App() {
 			<div>
 				{employees.map((employee) => {
 					return (
-						<div className="bg-slate-800 mt-3 text-slate-200 p-3 rounded">
+						<div key={employee.employeeID} className="bg-slate-800 mt-3 text-slate-200 p-3 rounded max-w-lg">
 							<div className="flex gap-3">
 								<img
 									className="w-28 rounded"
 									src={`images/employees/employee_${employee.employeeID}.jpg`}
 								/>
 								<div>
-									<div>
+									<div className="text-[1.2rem]">
 										{employee.firstName} {employee.lastName}
 									</div>
 									<div className="text-yellow-200">
