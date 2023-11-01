@@ -1,4 +1,5 @@
 import employees from "./data/employees.json";
+import dayjs  from 'dayjs';
 
 function App() {
 	const title = "Employee Directory";
@@ -25,11 +26,11 @@ function App() {
 									<div className="text-yellow-200">
 										{employee.title}
 									</div>
-									<div>
-										{employee.address.phone}
+									<div className="text-orange-600">
+										Tel: {employee.address.phone}
 									</div>
-									<div>
-										{employee.birthDate}
+									<div className="text-orange-600">
+										Birthday: {dayjs(employee.birthDate).format('MMM DD, YYYY')}
 									</div>
 								</div>
 							</div>
