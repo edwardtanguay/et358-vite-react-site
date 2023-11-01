@@ -9,7 +9,11 @@ function App() {
 			<h1 className="text-3xl mb-3 text-blue-800">{title}</h1>
 			<p>{introText}</p>
 			<ul>
-				{employees.}
+				{employees.map(employee => {
+					return (
+						<li>{employee.firstName}</li>
+					)
+				})}
 			</ul>
 		</>
 	);
